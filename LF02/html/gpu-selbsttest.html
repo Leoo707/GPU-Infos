@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selbsttest</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/cript.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Selbsttest</h1>
+        <nav>
+            <a href="/index.html">Zurück zur Hauptseite</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste dein Wissen über GPUs</h2>
+        <form id="quiz">
+            <div class="quiz-question">
+                <p>1. Was ist die Hauptaufgabe einer GPU?</p>
+                <label><input type="radio" name="q1" value="correct"> Grafikdaten verarbeiten</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Speicher verwalten</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Programme ausführen</label>
+            </div>
+            <div class="quiz-question">
+                <p>2. Welche Technologie verbessert die Grafikqualität durch realistische Lichtsimulation?</p>
+                <label><input type="radio" name="q2" value="wrong"> HDR</label><br>
+                <label><input type="radio" name="q2" value="correct"> Raytracing</label><br>
+                <label><input type="radio" name="q2" value="wrong"> DLSS</label>
+            </div>
+            <button type="button" onclick="checkAnswers()">Test auswerten</button>
+        </form>
+    </main>
+</body>
+</html>
